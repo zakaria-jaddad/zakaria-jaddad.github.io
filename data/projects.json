@@ -1,0 +1,79 @@
+[
+  {
+    "id": "ft_nmap",
+    "name": "ft_nmap",
+    "title": "Network Scanner",
+    "description": "Custom network scanner capable of detecting open ports and identifying services on target hosts.",
+    "technologies": ["Network programming", "TCP/UDP", "Raw sockets"]
+  },
+  {
+    "id": "ft_traceroute",
+    "name": "ft_traceroute",
+    "title": "Traceroute",
+    "description": "Network diagnostic tool that traces the path of packets across an IP network hop by hop.",
+    "technologies": ["ICMP protocol", "Raw sockets", "Network diagnostics"]
+  },
+  {
+    "id": "ft_ping",
+    "name": "ft_ping",
+    "title": "Ping Utility",
+    "description": "Implementation of the ICMP echo request/reply utility for testing network connectivity.",
+    "technologies": ["ICMP protocol", "Raw sockets", "System calls"]
+  },
+  {
+    "id": "ft_webserv",
+    "name": "ft_webserv",
+    "title": "HTTP Web Server",
+    "description": "Implementation of an HTTP 1.1 web server in C++ compliant with RFC 7230.",
+    "technologies": ["Network programming", "C++", "HTTP protocol", "Socket programming"]
+  },
+  {
+    "id": "ft_transcendence",
+    "name": "ft_transcendence",
+    "title": "Full-Stack Web App",
+    "description": "Full-stack web application development project. Completed with bonus features.",
+    "technologies": ["Web development", "Group collaboration", "Frontend/Backend integration"]
+  },
+  {
+    "id": "inception",
+    "name": "Inception",
+    "title": "Docker Infrastructure",
+    "description": "Docker containerization and system administration project.",
+    "technologies": ["Docker", "Virtualization", "System administration"]
+  },
+  {
+    "id": "cub3d",
+    "name": "cub3d",
+    "title": "3D Game Engine",
+    "description": "3D raycasting game engine inspired by Wolfenstein 3D. Completed with bonus features.",
+    "technologies": ["Graphics programming", "Raycasting algorithms"]
+  },
+  {
+    "id": "minishell",
+    "name": "minishell",
+    "title": "Unix Shell",
+    "description": "Complete shell implementation with advanced features including pipes, redirections, and built-in commands.",
+    "technologies": ["System programming", "Process management", "Unix"]
+  },
+  {
+    "id": "philosophers",
+    "name": "Philosophers",
+    "title": "Concurrency Problem",
+    "description": "Multithreading and synchronization project implementing the dining philosophers problem.",
+    "technologies": ["Concurrent programming", "Threading", "Deadlock prevention"]
+  },
+  {
+    "id": "push_swap",
+    "name": "push_swap",
+    "title": "Sorting Algorithm",
+    "description": "Data sorting algorithm optimization project using stack operations.",
+    "technologies": ["Algorithm optimization", "Data structures", "Complexity analysis"]
+  },
+  {
+    "id": "libft",
+    "name": "Libft",
+    "title": "C Standard Library",
+    "description": "Recreation of essential C standard library functions plus additional utility functions.",
+    "technologies": ["C programming", "Memory management", "Standard library implementation"]
+  }
+]
