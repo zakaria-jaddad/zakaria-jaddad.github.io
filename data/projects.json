@@ -28,11 +28,11 @@
     "technologies": ["Network programming", "C++", "HTTP protocol", "Socket programming"]
   },
   {
-    "id": "ft_transcendence",
-    "name": "ft_transcendence",
-    "title": "Full-Stack Web App",
-    "description": "Full-stack web application development project. Completed with bonus features.",
-    "technologies": ["Web development", "Group collaboration", "Frontend/Backend integration"]
+    "id": "assas",
+    "name": "assas",
+    "title": "SIEM / SOC Platform (ft_transcendence)",
+    "description": "Modular security operations platform: Go agents stream host logs over Socket.IO to a NestJS backend, events are stored in PostgreSQL, evaluated against Sigma rules, and explored on a Next.js dashboard.",
+    "technologies": ["NestJS", "Next.js", "Go", "Socket.IO", "PostgreSQL", "Redis", "BullMQ", "Docker"]
   },
   {
     "id": "inception",

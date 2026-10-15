@@ -214,6 +214,32 @@ footer {
   border-radius: var(--radius);
 }
 
+/* ── Mermaid diagrams ── */
+
+.markdown-body .mermaid {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.markdown-body .mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.markdown-body .mermaid-error {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  white-space: pre-wrap;
+}
+
 /* ── Project cards ── */
 
 .projects-grid {
