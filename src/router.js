@@ -5,10 +5,6 @@ export function on(path, handler) {
   routes.push({ path, handler });
 }
 
-export function navigate(hash) {
-  window.location.hash = hash;
-}
-
 function matchRoute(hash) {
   const clean = hash.replace(/^#\/?/, "") || "/";
   for (const route of routes) {

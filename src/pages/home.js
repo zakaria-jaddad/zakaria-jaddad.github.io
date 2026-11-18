@@ -1,5 +1,4 @@
 import projects from "../../data/projects.json";
-import { navigate } from "../router";
 
 const aboutHTML = `
   <h1><strong>Personal home page where I showcase my programming projects.</strong></h1>
@@ -52,7 +51,7 @@ export default async function home() {
   const projectsGrid = projects
     .map(
       (p) => `
-      <a class="project-card" data-project="${p.id}">
+      <a class="project-card" href="#/project/${p.id}">
         <div class="project-card-header">
           <span class="project-card-name">${p.name}</span>
           <span class="project-card-title">${p.title}</span>
@@ -71,13 +70,6 @@ export default async function home() {
     <h2 style="margin-top: 2.5rem; margin-bottom: 0;">Projects</h2>
     <div class="projects-grid">${projectsGrid}</div>
   `;
-
-  app.querySelectorAll(".project-card").forEach((card) => {
-    card.addEventListener("click", (e) => {
-      e.preventDefault();
-      navigate(`#/project/${card.dataset.project}`);
-    });
-  });
 
   return () => {};
 }

@@ -96,12 +96,15 @@ export default async function project({ name }) {
   }
 
   app.innerHTML = `<div class="loading">Loading ${proj.name}</div>`;
+  const loading = app.firstElementChild;
+  const directory = proj.directory ?? proj.name;
 
   try {
-    const resp = await fetch(`/projects/${proj.name}/README.md`);
+    const resp = await fetch(`/projects/${directory}/README.md`);
     if (!resp.ok) throw new Error("Not found");
 
     const raw = await resp.text();
+    if (!loading.isConnected) return;
     const html = marked.parse(raw);
 
     app.innerHTML = `
@@ -117,8 +120,9 @@ export default async function project({ name }) {
       <div class="markdown-body">${html}</div>
     `;
 
-    await renderMermaid(app);
+    await renderMermaid(app.querySelector(".markdown-body"));
   } catch {
+    if (!loading.isConnected) return;
     app.innerHTML = `
       <a href="/" class="back-link">Back to home</a>
       <div class="project-header">
@@ -130,7 +134,7 @@ export default async function project({ name }) {
       </div>
       <hr>
       <div class="error">
-        <p>README not found. Add a <code>README.md</code> file at <code>public/projects/${proj.name}/README.md</code>.</p>
+        <p>The project page could not be loaded.</p>
       </div>
     `;
   }

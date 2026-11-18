@@ -31,8 +31,16 @@
     "id": "assas",
     "name": "assas",
     "title": "SIEM / SOC Platform (ft_transcendence)",
-    "description": "Modular security operations platform: Go agents stream host logs over Socket.IO to a NestJS backend, events are stored in PostgreSQL, evaluated against Sigma rules, and explored on a Next.js dashboard.",
+    "description": "A security operations platform that brings host telemetry, Sigma detections, alert triage, and threat intelligence into one analyst interface.",
     "technologies": ["NestJS", "Next.js", "Go", "Socket.IO", "PostgreSQL", "Redis", "BullMQ", "Docker"]
+  },
+  {
+    "id": "agentv",
+    "name": "AgentV",
+    "directory": "agentv",
+    "title": "Host Telemetry Agent",
+    "description": "A Go service that supervises Vector, forwards structured logs over Socket.IO, and ships as checksummed binaries for Linux and macOS.",
+    "technologies": ["Go", "Vector", "Unix sockets", "Socket.IO", "GitHub Actions", "GoReleaser"]
   },
   {
     "id": "inception",
