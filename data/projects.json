@@ -46,8 +46,8 @@
     "id": "inception",
     "name": "Inception",
     "title": "Docker Infrastructure",
-    "description": "Docker containerization and system administration project.",
-    "technologies": ["Docker", "Virtualization", "System administration"]
+    "description": "A Docker Compose stack that hosts WordPress over HTTPS with custom service images and persistent storage.",
+    "technologies": ["Docker Compose", "NGINX", "WordPress", "PHP-FPM", "MariaDB"]
   },
   {
     "id": "cub3d",
